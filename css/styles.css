@@ -29,3 +29,31 @@ h1, h2, h3, h4, h5, h6 {
 	color: #000;
 }
 /* header*/
+.header {
+    background: url('../img/background.jpg');
+    background-position: center;
+}
+/* titulo */
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.header .titulo {
+    font-size: 75px;
+    text-transform: uppercase;
+}
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+/* animacion boton */
+@keyframes bajar-subir {
+    0% { transform: translateY(20px); }
+    25% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}

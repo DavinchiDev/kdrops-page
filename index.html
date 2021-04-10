@@ -11,18 +11,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css">
     <!--css-->
 	<link rel="stylesheet" href="css/styles.css">
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>KDROPS-OFICIAL</title>
 </head>
 <body>
 <main id="fullpage">
-    <header class="section">
+    <header class="section header">
         <div class="contenedor-titulo">
-            <h1>
+            <h1 class="titulo">
                 <span class="texto-naranja">KDROPS</span>
                 <span class="texto-blanco">COLOMBIA</span>
             </h1>
             <p class="texto-blanco">Distribuidores oficiales!</p>
         </div>
+        <!--validacion-->
+        <center>
+            <input type="text" placeholder="Codigo Producto" id="myInput">
+              <button class="btn btn-success" type="button" onclick="getInputValue();">Validar</button>
+        </center>
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <p  id="alertaValidacion"></p>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        <!--validacion-->
         <div class="contenedor-icono">
             <p>
                 <a href="#" class="texto-blanco">
@@ -38,7 +55,13 @@
         <h1>Footer</h1>
     </footer>
 </main>
+    <!--js scripts-->
+    <!--bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!--fullpagejs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"></script>
+    <!--llamando scripts js-->
     <script src="js/script.js"></script>
+    <script src="js/script-validacion.js"></script>
 </body>
 </html>
