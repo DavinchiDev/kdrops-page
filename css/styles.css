@@ -28,6 +28,22 @@ h1, h2, h3, h4, h5, h6 {
 .texto-negro {
 	color: #000;
 }
+/*nav*/
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+/*marca*/
+.nav .marca {
+    font-size: 25px;
+}
 /* header*/
 .header {
     background: url('../img/background.jpg');
@@ -49,7 +65,22 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 3%;
     left: 50%;
     font-size: 40px;
-    animation: bajar-subir 1s ease infinite;
+    animation: bajar-subir 2s ease infinite;
+}
+/* menu */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+/*fullpage right*/
+#fp-nav ul li a span {
+    background: orangered;
 }
 /* animacion boton */
 @keyframes bajar-subir {
